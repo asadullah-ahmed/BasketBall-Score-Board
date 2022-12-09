@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="new-game-div">
+      <button class="new-game" id="new-g" onclick="resetZero()">
+        NEW GAME
+      </button>
+    </div>
+    <div class="container">
+      <div class="home-card">
+        <h3>HOME</h3>
+        <div class="score home" id="home-score">0</div>
+        <div class="btns">
+          <button onclick="add1()">+ 1</button>
+          <button onclick="add2()">+ 2</button>
+          <button onclick="add3()">+ 3</button>
+        </div>
+      </div>
+      <div class="guest-card">
+        <h3>GUEST</h3>
+        <div class="score guest" id="guest-score">0</div>
+        <div class="btns">
+          <button onclick="addOne()">+ 1</button>
+          <button onclick="addTwo()">+ 2</button>
+          <button onclick="addThree()">+ 3</button>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      <button id="save-btn" onclick="save()">SAVE SCORE</button>
+      <p id="save-home-score">Home Count:</p>
+      <p id="save-guest-score">Guest Count:</p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
